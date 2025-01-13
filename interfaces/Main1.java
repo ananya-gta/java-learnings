@@ -1,6 +1,8 @@
 package interfaces;
 
 interface Bird {
+    
+    // by default this is an abstract method
     public void fly();
 }
 
