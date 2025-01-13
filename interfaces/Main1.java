@@ -3,6 +3,7 @@ package interfaces;
 interface Bird {
     public void fly();
 }
+
 class Eagle implements Bird {
 
     @Override
@@ -23,7 +24,8 @@ class Crow implements Bird {
 
 public class Main1 {
     public static void main(String[] args) {
-        // interfaces cannot be instantiated, but can hold references of the instances of classes which implements it
+        // interfaces cannot be instantiated, but can hold references of the instances
+        // of classes which implements it
         Bird eagleObj = new Eagle();
         Bird crowObj = new Crow();
         eagleObj.fly();
