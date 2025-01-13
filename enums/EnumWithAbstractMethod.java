@@ -4,6 +4,7 @@ public class EnumWithAbstractMethod {
     public interface MyInterface {
         public String toLowerCase();
     }
+
     public enum Sample implements MyInterface {
         MONDAY {
             public void dummyMethod() {
@@ -26,16 +27,15 @@ public class EnumWithAbstractMethod {
         public String toLowerCase() {
             return this.name().toLowerCase();
         } // thsi function is for every constant to access
-        // if abstarct method is there then each constant has to implement it
+          // if abstarct method is there then each constant has to implement it
+
         public abstract void dummyMethod();
 
-        
     }
 
-   
-    
     public static void main(String[] args) {
         Sample mondaySample = Sample.MONDAY;
         mondaySample.dummyMethod();
+        mondaySample.toLowerCase();
     }
 }
