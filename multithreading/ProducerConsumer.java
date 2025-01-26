@@ -1,43 +1,60 @@
 package multithreading;
 
-import java.util.LinkedList;
 import java.util.Queue;
 
 public class ProducerConsumer {
-    private Queue<Integer> queue = new LinkedList<>();
-    private final int MAX_SIZE = 10;
+    private Queue<Integer> queue;
+    private int bufferSize;
 
-    public synchronized void produce(int item) {
-        while (queue.size() == MAX_SIZE) {
-            try {
-                System.out.println("Queue " + Thread.currentThread().getName() + " is waiting because the queue is full, cannot add item");
-                wait(); // it releases the monitor lock
-            } catch (Exception e) {
-            }
+    public ProducerConsumer(int bufferSize) {
+        queue = new java.util.LinkedList<>();
+        this.bufferSize = bufferSize;
+    }
+
+    public synchronized void produce(int item) throws Exception{
+        while (queue.size() == bufferSize) {
+            System.out.println("producer will wait till the buffer  is empty");
+            wait();
         }
 
         queue.add(item);
-        System.out.println("Produced item: " + item);
-
-        // notify consumer that there is new data, make the consumer thread runnable again;
-        notifyAll();
+        System.out.println("producer added item: " + item + " to the buffer");
+        // notify the consumer that there is no space in buffer now
+        notify();
     }
 
-    public synchronized int consumer() {
+    public synchronized int consume() throws Exception{
         while (queue.isEmpty()) {
-            try {
-                System.out.println("Queue " + Thread.currentThread().getName()
-                        + " is waiting because the queue is empty, cannot remove item");
-                wait(); // it releases the monitor lock
-            } catch (Exception e) {
-            }}
-        // Remove item from the buffer
-        int item = queue.poll();
-        System.out.println("Consumed: " + item);
-
-        // Notify producer that there is space in the buffer
-        notifyAll();
-
-        return item;
+            System.out.println("consumer will wait till the buffer is not empty");
+            wait();
+        }
+        int consumedItem = queue.poll();
+        // notify the producer that there is space in buffer now
+        notify();
+        System.out.println("Consumer consumed this item: " + consumedItem);
+        return consumedItem;
     }
+
+    public static void main(String[] args) {
+        ProducerConsumer producerConsumer = new ProducerConsumer(5);
+        Thread producer = new Thread(()->{
+            try {
+                for (int i = 0; i < 6; i++) {
+                    producerConsumer.produce(i);
+                }
+            } catch (Exception e) {}
+        });
+
+        Thread consumer = new Thread(()->{
+            try {
+                for (int i = 0; i < 6; i++) {
+                    producerConsumer.consume();
+                }
+            } catch (Exception e) {}
+        });
+
+        producer.start();
+        consumer.start();
+    }
+    
 }
