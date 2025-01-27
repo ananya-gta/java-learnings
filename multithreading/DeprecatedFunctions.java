@@ -17,7 +17,7 @@ public class DeprecatedFunctions {
         System.out.println("Lock released");
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         // the below object will be shared among threads
         DeprecatedFunctions obj = new DeprecatedFunctions();
         System.out.println("Main started");
@@ -56,6 +56,11 @@ public class DeprecatedFunctions {
         System.out.println("Now main will resume t1, t1 is resuming...");
         t1.resume();
 
+        // if you want thread1 and thread2 to finish before main thread finishes
+        t1.join();
+
         System.out.println("Main thread is finishing its work");
+
+
     }
 }
