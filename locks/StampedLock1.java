@@ -6,23 +6,26 @@ public class StampedLock1 {
     boolean isAvailable = false;
     StampedLock lock = new StampedLock();
     public void read() {
+        // stores the state of the lock 
         long stamp = lock.readLock();
         try {
             System.out.println("Read Lock acquired by: " + Thread.currentThread().getName());
             Thread.sleep(4000);
         } catch (Exception e) {
         } finally {
-            
+            lock.unlockRead(stamp);
             System.out.println("Read Lock released by: " + Thread.currentThread().getName());
         }
     }
 
     public void write() {
+        long stamp = lock.writeLock();
         try {
             System.out.println("Write Lock acquired by: " + Thread.currentThread().getName());
             isAvailable = false;
         } catch (Exception e) {
         } finally {
+            lock.unlockWrite(stamp);
             System.out.println("Write Lock released by: " + Thread.currentThread().getName());
         }
     }
