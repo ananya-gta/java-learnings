@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ThreadPoolExecutor1",
+            "request": "launch",
+            "mainClass": "threadpool.ThreadPoolExecutor1",
+            "projectName": "java-learnings_8ae553b7"
+        },
+        {
+            "type": "java",
             "name": "L1790",
             "request": "launch",
             "mainClass": "dsa.L1790",
