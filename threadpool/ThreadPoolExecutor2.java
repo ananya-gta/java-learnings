@@ -21,7 +21,7 @@ public class ThreadPoolExecutor2 {
             } catch (Exception e) {
             } // let the task require 7 sec to complete
             System.out.println("Task is processed / executed by : " + Thread.currentThread().getName());
-        });
+        }); // this thread is not returning anything toh it will call runnable
 
         executor.shutdown();
 

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ThreadPoolExecutor3",
+            "request": "launch",
+            "mainClass": "threadpool.ThreadPoolExecutor3",
+            "projectName": "java-learnings_8ae553b7"
+        },
+        {
+            "type": "java",
             "name": "ThreadPoolExecutor2",
             "request": "launch",
             "mainClass": "threadpool.ThreadPoolExecutor2",
