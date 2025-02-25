@@ -14,14 +14,15 @@ public class CompletableFuture1 {
                     Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());
 
             // Completable future has 5 main functions
-            // 1. supplyAsync()
+            // -------------1. supplyAsync()------------------
             CompletableFuture<String> asyncTask = CompletableFuture.supplyAsync(() -> {
                 return "task completed using completableFuture";
             }, executor);
             // since completable futre is a child of futre so its get method can be used
             System.out.println(asyncTask.get());
 
-            // 2. thenApply()
+            // --------------2. thenApply() & thenApplyAsync() read it from
+            // notes-------------------
             CompletableFuture<String> asyncTask1 = CompletableFuture.supplyAsync(() -> {
                 return "task completed using completableFuture";
             }, executor)
@@ -31,6 +32,18 @@ public class CompletableFuture1 {
 
             // since completable futre is a child of futre so its get method can be used
             System.out.println(asyncTask1.get());
+
+            // --------------2. thenCompose() & thenComposeAsync() read it from
+            // notes-------------------
+            CompletableFuture<String> asyncTask2 = CompletableFuture.supplyAsync(() -> {
+                return "task completed using completableFuture";
+            }, executor)
+                    .thenCompose((String val) -> {
+                        return CompletableFuture.supplyAsync(() -> val + ", also used thenCompose()");
+                    });
+
+            // since completable futre is a child of futre so its get method can be used
+            System.out.println(asyncTask2.get());
         } catch (Exception e) {
             // TODO: handle exception
         }
