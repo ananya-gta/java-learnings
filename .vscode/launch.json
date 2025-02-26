@@ -1,224 +1,231 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "ThreadPoolExecutor3",
-            "request": "launch",
-            "mainClass": "threadpool.ThreadPoolExecutor3",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "ThreadPoolExecutor2",
-            "request": "launch",
-            "mainClass": "threadpool.ThreadPoolExecutor2",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "ThreadPoolExecutor1",
-            "request": "launch",
-            "mainClass": "threadpool.ThreadPoolExecutor1",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "L1790",
-            "request": "launch",
-            "mainClass": "dsa.L1790",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "L1800",
-            "request": "launch",
-            "mainClass": "dsa.L1800",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "EnumWithAbstractMethod",
-            "request": "launch",
-            "mainClass": "enums.EnumWithAbstractMethod",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "enums.Main",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "MethodOverrideByConstant",
-            "request": "launch",
-            "mainClass": "enums.MethodOverrideByConstant",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "ConsumerInterface",
-            "request": "launch",
-            "mainClass": "interfaces.ConsumerInterface",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "DefaultMethod",
-            "request": "launch",
-            "mainClass": "interfaces.DefaultMethod",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "FunctionInterface",
-            "request": "launch",
-            "mainClass": "interfaces.FunctionInterface",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "LambdaExpression",
-            "request": "launch",
-            "mainClass": "interfaces.LambdaExpression",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "MultipleInheritance",
-            "request": "launch",
-            "mainClass": "interfaces.MultipleInheritance",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "SupplierInterface",
-            "request": "launch",
-            "mainClass": "interfaces.SupplierInterface",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "ConditionInLocks",
-            "request": "launch",
-            "mainClass": "locks.ConditionInLocks",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "ReadWriteLock",
-            "request": "launch",
-            "mainClass": "locks.ReadWriteLock",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "Reentrant1",
-            "request": "launch",
-            "mainClass": "locks.Reentrant1",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "Reentrant2",
-            "request": "launch",
-            "mainClass": "locks.Reentrant2",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "Semaphore1",
-            "request": "launch",
-            "mainClass": "locks.Semaphore1",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "StampedLock1",
-            "request": "launch",
-            "mainClass": "locks.StampedLock1",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "StampedLock2",
-            "request": "launch",
-            "mainClass": "locks.StampedLock2",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "DaemonThread",
-            "request": "launch",
-            "mainClass": "multithreading.DaemonThread",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "DeprecatedFunctions",
-            "request": "launch",
-            "mainClass": "multithreading.DeprecatedFunctions",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "Example1",
-            "request": "launch",
-            "mainClass": "multithreading.Example1",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "MonitorLock",
-            "request": "launch",
-            "mainClass": "multithreading.MonitorLock",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "ProducerConsumer",
-            "request": "launch",
-            "mainClass": "multithreading.ProducerConsumer",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "SharedResource",
-            "request": "launch",
-            "mainClass": "multithreading.SharedResource",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "ThreadCreationThroughExtends",
-            "request": "launch",
-            "mainClass": "multithreading.ThreadCreationThroughExtends",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "ThreadCreationUsingRunnable",
-            "request": "launch",
-            "mainClass": "multithreading.ThreadCreationUsingRunnable",
-            "projectName": "java-learnings_8ae553b7"
-        },
-        {
-            "type": "java",
-            "name": "InstanceOfOpeartor",
-            "request": "launch",
-            "mainClass": "operators.InstanceOfOpeartor",
-            "projectName": "java-learnings_8ae553b7"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "WorkStealingPool1",
+      "request": "launch",
+      "mainClass": "threadpool.WorkStealingPool1",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ThreadPoolExecutor3",
+      "request": "launch",
+      "mainClass": "threadpool.ThreadPoolExecutor3",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ThreadPoolExecutor2",
+      "request": "launch",
+      "mainClass": "threadpool.ThreadPoolExecutor2",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ThreadPoolExecutor1",
+      "request": "launch",
+      "mainClass": "threadpool.ThreadPoolExecutor1",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "L1790",
+      "request": "launch",
+      "mainClass": "dsa.L1790",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "L1800",
+      "request": "launch",
+      "mainClass": "dsa.L1800",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "EnumWithAbstractMethod",
+      "request": "launch",
+      "mainClass": "enums.EnumWithAbstractMethod",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "enums.Main",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "MethodOverrideByConstant",
+      "request": "launch",
+      "mainClass": "enums.MethodOverrideByConstant",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ConsumerInterface",
+      "request": "launch",
+      "mainClass": "interfaces.ConsumerInterface",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "DefaultMethod",
+      "request": "launch",
+      "mainClass": "interfaces.DefaultMethod",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "FunctionInterface",
+      "request": "launch",
+      "mainClass": "interfaces.FunctionInterface",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "LambdaExpression",
+      "request": "launch",
+      "mainClass": "interfaces.LambdaExpression",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "MultipleInheritance",
+      "request": "launch",
+      "mainClass": "interfaces.MultipleInheritance",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "SupplierInterface",
+      "request": "launch",
+      "mainClass": "interfaces.SupplierInterface",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ConditionInLocks",
+      "request": "launch",
+      "mainClass": "locks.ConditionInLocks",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ReadWriteLock",
+      "request": "launch",
+      "mainClass": "locks.ReadWriteLock",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "Reentrant1",
+      "request": "launch",
+      "mainClass": "locks.Reentrant1",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "Reentrant2",
+      "request": "launch",
+      "mainClass": "locks.Reentrant2",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "Semaphore1",
+      "request": "launch",
+      "mainClass": "locks.Semaphore1",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "StampedLock1",
+      "request": "launch",
+      "mainClass": "locks.StampedLock1",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "StampedLock2",
+      "request": "launch",
+      "mainClass": "locks.StampedLock2",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "DaemonThread",
+      "request": "launch",
+      "mainClass": "multithreading.DaemonThread",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "DeprecatedFunctions",
+      "request": "launch",
+      "mainClass": "multithreading.DeprecatedFunctions",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "Example1",
+      "request": "launch",
+      "mainClass": "multithreading.Example1",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "MonitorLock",
+      "request": "launch",
+      "mainClass": "multithreading.MonitorLock",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ProducerConsumer",
+      "request": "launch",
+      "mainClass": "multithreading.ProducerConsumer",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "SharedResource",
+      "request": "launch",
+      "mainClass": "multithreading.SharedResource",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ThreadCreationThroughExtends",
+      "request": "launch",
+      "mainClass": "multithreading.ThreadCreationThroughExtends",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "ThreadCreationUsingRunnable",
+      "request": "launch",
+      "mainClass": "multithreading.ThreadCreationUsingRunnable",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "InstanceOfOpeartor",
+      "request": "launch",
+      "mainClass": "operators.InstanceOfOpeartor",
+      "projectName": "java-learnings_8ae553b7"
+    }
+  ]
 }
