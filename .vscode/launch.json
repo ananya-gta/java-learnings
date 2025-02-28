@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ThreadLocal1",
+      "request": "launch",
+      "mainClass": "threadpool.ThreadLocal1",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
       "name": "WorkStealingPool1",
       "request": "launch",
       "mainClass": "threadpool.WorkStealingPool1",
