@@ -1,0 +1,8 @@
+Iterable is an interface which is implemented by all collection classes.
+It is a top-level interface and is a member of java.util package.
+It is the root interface for all the collection classes. 
+It provides methods called iterator() which returns an iterator object which provides below methods:
+1. hasNext() - returns true if there are more than one elements in the collection.
+2. next() - return the next element in the collection.
+3. remove() - removes the last element returned by the iterator.
+It provides forEach() method which is used to iterate over the elements of the collection.
