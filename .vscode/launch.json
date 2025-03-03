@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MaxPq",
+      "request": "launch",
+      "mainClass": "collections.queues.MaxPq",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
+      "name": "Pq1",
+      "request": "launch",
+      "mainClass": "collections.queues.Pq1",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
       "name": "CollectionExample",
       "request": "launch",
       "mainClass": "collections.CollectionExample",
