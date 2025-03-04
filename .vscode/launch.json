@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ComparableVSComparator",
+      "request": "launch",
+      "mainClass": "collections.ComparableVSComparator",
+      "projectName": "java-learnings_8ae553b7"
+    },
+    {
+      "type": "java",
       "name": "MaxPq",
       "request": "launch",
       "mainClass": "collections.queues.MaxPq",
