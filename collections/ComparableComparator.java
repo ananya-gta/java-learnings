@@ -3,7 +3,7 @@ package collections;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class ComparableVSComparator {
+public class ComparableComparator {
     public static void main(String[] args) {
         Integer[] arr = {5, 6, 7, 8};
         // Arrays.sort(arr); --> this will give `cannot cast to a java.lang.Comparable` exception, instead pass a comparator
